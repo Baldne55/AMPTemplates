@@ -33,5 +33,12 @@
         "UpdateSourceTarget": "{{$FullBaseDir}}main",
         "OverwriteExistingFiles": false,
         "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Create Server Home Directory",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullRootDir}}cod2home/main",
+        "OverwriteExistingFiles": false
     }
 ]
